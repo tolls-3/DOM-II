@@ -100,3 +100,19 @@ document.querySelector('a')
         event.preventDefault();
         console.log("Invalid Home link");
     });
+
+//stopping propagation
+
+const section = document.querySelector(".img-content")
+
+function logTarget(event) {
+    console.log('the event target is ', event.target);
+    console.log('the current target is ', event.currentTarget);
+  }
+  
+  document.querySelectorAll('*')
+    .forEach(element => element.addEventListener('click', logTarget));
+
+  section.addEventListener('click',function(event){
+      event.stopPropagation();
+  });
