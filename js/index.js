@@ -59,6 +59,9 @@ testImg.addEventListener("drag", () => {
   testImg.style.backgroundColor = "red";
   testImg.style.borderRadius = "50%";
   testImg.style.border = "2px dashed black";
+
+  console.log("You have dragged intro image");
+//   alert("You have dragged intro image")
 });
 
 //load
