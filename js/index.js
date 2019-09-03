@@ -92,3 +92,11 @@ let heading = document.querySelector('.logo-heading')
 heading.addEventListener('click', (event) => {
   event.target.style.display = 'none';
 });
+
+//prevent default
+
+document.querySelector('a')
+    .addEventListener('click',function(event){
+        event.preventDefault();
+        console.log("Invalid Home link");
+    });
