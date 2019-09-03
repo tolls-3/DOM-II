@@ -84,5 +84,8 @@ window.addEventListener('resize', function(){
     this.document.body.style.opacity= Number(this.document.body.style.opacity)*0.9;
 });
 
-
-//
+//click
+let heading = document.querySelector('.logo-heading')
+heading.addEventListener('click', (event) => {
+  event.target.style.display = 'none';
+});
