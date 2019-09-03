@@ -71,11 +71,11 @@ window.addEventListener('load', function() {
   });
 
 //focus
-// const focusButton = document.querySelectorAll('.btn');
+const focusButton = document.querySelectorAll('.btn');
 
-// focusButton.addEventListener('focus', (event) => {
-//   event.target.style.background = 'pink';    
-// });
+focusButton.addEventListener('focus', (event) => {
+  event.target.style.background = 'pink';    
+});
 
 
 //resize
